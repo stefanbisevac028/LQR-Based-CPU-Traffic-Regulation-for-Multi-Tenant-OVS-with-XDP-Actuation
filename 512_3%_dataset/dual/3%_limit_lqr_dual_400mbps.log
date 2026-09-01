@@ -1,0 +1,193 @@
+2026-08-26 11:34:34,824 - __main__ - INFO - Loading config from /home/stefan/LQR/config/multi_lqr_config.yaml
+2026-08-26 11:34:34,826 - lqr_controller_v2 - INFO - LQR Controller V2 initialized with target CPU: 3.0%
+2026-08-26 11:34:34,826 - lqr_controller_v2 - INFO - Sampling time dt: 0.5s
+2026-08-26 11:34:34,827 - lqr_controller_v2 - INFO - Drop rate levels: 20 levels
+2026-08-26 11:34:34,827 - lqr_controller_v2 - INFO - LQR Gain K: [[0.25622424 0.30311163]]
+2026-08-26 11:34:34,827 - lqr_controller_v2 - INFO - Soft limit: enabled
+2026-08-26 11:34:34,827 - lqr_controller_v2 - INFO - Prediction: enabled
+2026-08-26 11:34:34,827 - lqr_controller_v2 - INFO - LQR Controller V2 initialized with target CPU: 3.0%
+2026-08-26 11:34:34,827 - lqr_controller_v2 - INFO - Sampling time dt: 0.5s
+2026-08-26 11:34:34,827 - lqr_controller_v2 - INFO - Drop rate levels: 20 levels
+2026-08-26 11:34:34,828 - lqr_controller_v2 - INFO - LQR Gain K: [[0.25622424 0.30311163]]
+2026-08-26 11:34:34,828 - lqr_controller_v2 - INFO - Soft limit: enabled
+2026-08-26 11:34:34,828 - lqr_controller_v2 - INFO - Prediction: enabled
+2026-08-26 11:34:34,828 - __main__ - INFO - Multi-Namespace LQR Control V2 initialized
+2026-08-26 11:34:34,828 - __main__ - INFO - Interface: enp5s0np0
+2026-08-26 11:34:34,828 - __main__ - INFO - Sampling time: 0.5s
+2026-08-26 11:34:34,828 - __main__ - INFO - Soft limit: True
+2026-08-26 11:34:34,828 - __main__ - INFO - Prediction: True
+2026-08-26 11:34:34,828 - __main__ - INFO -   ovs-1: target=3.0%, max=3.0%
+2026-08-26 11:34:34,828 - __main__ - INFO -   ovs-2: target=3.0%, max=3.0%
+2026-08-26 11:34:34,828 - ovs_lqr_control - INFO - Loading XDP program from /home/stefan/LQR/xdp/ovs_rate_limiter.bpf.c
+2026-08-26 11:34:35,844 - ovs_lqr_control - INFO - BPF program compiled successfully
+2026-08-26 11:34:35,844 - ovs_lqr_control - INFO - BPF maps obtained
+2026-08-26 11:34:35,844 - ovs_lqr_control - INFO - Initializing IP/MAC mappings...
+2026-08-26 11:34:35,848 - ovs_lqr_control - INFO -   Mapped 192.168.1.0/24 -> namespace 0 (ovs-1)
+2026-08-26 11:34:35,849 - ovs_lqr_control - INFO -   Mapped 192.168.2.0/24 -> namespace 1 (ovs-2)
+2026-08-26 11:34:35,849 - ovs_lqr_control - INFO - Mappings initialized
+2026-08-26 11:34:35,849 - ovs_lqr_control - INFO - Mappings initialized
+2026-08-26 11:34:35,849 - ovs_lqr_control - INFO - XDP function loaded
+2026-08-26 11:34:35,861 - ovs_lqr_control - INFO - ✓ XDP program attached to enp5s0np0 (SKB mode)
+2026-08-26 11:34:35,861 - __main__ - INFO - ✓ XDP program loaded successfully
+2026-08-26 11:34:35,861 - __main__ - INFO - Starting multi-namespace control loop...
+2026-08-26 11:34:35,861 - __main__ - INFO - 
+2026-08-26 11:34:35,862 - ovs_lqr_control - INFO - Opened log file: /home/stefan/cpu_packet_monitoring/network_metrics_2026-08-26_11-34-30.log.jsonl
+2026-08-26 11:34:35,862 - __main__ - INFO - [1] ovs-1: CPU=0.00%, PPS=13, DropRate=0.750
+2026-08-26 11:34:35,862 - __main__ - INFO - [1] ovs-2: CPU=0.00%, PPS=13, DropRate=0.750
+2026-08-26 11:34:36,362 - __main__ - INFO - [2] ovs-1: CPU=0.06%, PPS=15, DropRate=0.700
+2026-08-26 11:34:36,362 - __main__ - INFO - [2] ovs-2: CPU=0.06%, PPS=15, DropRate=0.700
+2026-08-26 11:34:36,862 - __main__ - INFO - [3] ovs-1: CPU=0.00%, PPS=7, DropRate=0.800
+2026-08-26 11:34:36,863 - __main__ - INFO - [3] ovs-2: CPU=0.00%, PPS=7, DropRate=0.800
+2026-08-26 11:34:37,362 - __main__ - INFO - [4] ovs-1: CPU=0.00%, PPS=15, DropRate=0.750
+2026-08-26 11:34:37,362 - __main__ - INFO - [4] ovs-2: CPU=0.00%, PPS=15, DropRate=0.750
+2026-08-26 11:34:37,862 - __main__ - INFO - [5] ovs-1: CPU=0.06%, PPS=11, DropRate=0.750
+2026-08-26 11:34:37,863 - __main__ - INFO - [5] ovs-2: CPU=2.06%, PPS=11, DropRate=0.000
+2026-08-26 11:34:38,362 - __main__ - INFO - [6] ovs-1: CPU=0.00%, PPS=17, DropRate=0.800
+2026-08-26 11:34:38,363 - __main__ - INFO - [6] ovs-2: CPU=2.04%, PPS=24,737, DropRate=0.750
+2026-08-26 11:34:38,862 - __main__ - INFO - [7] ovs-1: CPU=2.00%, PPS=5, DropRate=0.000
+2026-08-26 11:34:38,863 - __main__ - INFO - [7] ovs-2: CPU=5.98%, PPS=40,874, DropRate=0.000
+2026-08-26 11:34:39,363 - __main__ - INFO - [8] ovs-1: CPU=2.00%, PPS=11, DropRate=0.750
+2026-08-26 11:34:39,363 - __main__ - INFO - [8] ovs-2: CPU=5.25%, PPS=58,560, DropRate=0.200
+2026-08-26 11:34:39,863 - __main__ - INFO - [9] ovs-1: CPU=0.00%, PPS=9, DropRate=0.950
+/home/stefan/LQR/src/lqr_controller_v2.py:241: RuntimeWarning: divide by zero encountered in scalar divide
+  hard_drop = min((overshoot / max_overshoot) ** 0.7 * 0.95, 0.95)
+2026-08-26 11:34:39,863 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.58% > target+margin 3.50%, overshoot=1.58%, drop_rate=0.950
+2026-08-26 11:34:39,863 - __main__ - INFO - [9] ovs-2: CPU=6.29%, PPS=51,818, DropRate=0.950
+2026-08-26 11:34:40,362 - __main__ - WARNING - [10] No metrics available
+2026-08-26 11:34:40,863 - __main__ - INFO - [11] ovs-1: CPU=0.01%, PPS=15, DropRate=0.800
+2026-08-26 11:34:40,863 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 3.71% > target+margin 3.50%, overshoot=0.71%, drop_rate=0.950
+2026-08-26 11:34:40,863 - __main__ - INFO - [11] ovs-2: CPU=3.20%, PPS=7,693, DropRate=0.950
+2026-08-26 11:34:41,363 - __main__ - INFO - [12] ovs-1: CPU=2.00%, PPS=13, DropRate=0.000
+2026-08-26 11:34:41,364 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.58% > target+margin 3.50%, overshoot=1.58%, drop_rate=0.950
+2026-08-26 11:34:41,364 - __main__ - INFO - [12] ovs-2: CPU=3.60%, PPS=4,889, DropRate=0.950
+2026-08-26 11:34:41,863 - __main__ - INFO - [13] ovs-1: CPU=2.00%, PPS=11, DropRate=0.450
+2026-08-26 11:34:41,864 - __main__ - INFO - [13] ovs-2: CPU=1.39%, PPS=4,888, DropRate=0.950
+2026-08-26 11:34:42,363 - __main__ - INFO - [14] ovs-1: CPU=0.00%, PPS=15, DropRate=0.950
+2026-08-26 11:34:42,364 - __main__ - INFO - [14] ovs-2: CPU=1.49%, PPS=4,896, DropRate=0.000
+2026-08-26 11:34:42,863 - __main__ - INFO - [15] ovs-1: CPU=0.00%, PPS=17, DropRate=0.750
+2026-08-26 11:34:42,864 - __main__ - INFO - [15] ovs-2: CPU=2.98%, PPS=31,326, DropRate=0.000
+2026-08-26 11:34:43,364 - __main__ - INFO - [16] ovs-1: CPU=0.00%, PPS=5, DropRate=0.750
+2026-08-26 11:34:43,364 - __main__ - INFO - [16] ovs-2: CPU=6.32%, PPS=53,200, DropRate=0.000
+2026-08-26 11:34:43,864 - __main__ - INFO - [17] ovs-1: CPU=0.00%, PPS=11, DropRate=0.750
+2026-08-26 11:34:43,864 - __main__ - INFO - [17] ovs-2: CPU=6.29%, PPS=47,590, DropRate=0.000
+2026-08-26 11:34:44,364 - __main__ - INFO - [18] ovs-1: CPU=0.00%, PPS=9, DropRate=0.750
+2026-08-26 11:34:44,364 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 5.30% > target+margin 3.50%, overshoot=2.30%, drop_rate=0.950
+2026-08-26 11:34:44,364 - __main__ - INFO - [18] ovs-2: CPU=8.33%, PPS=52,175, DropRate=0.950
+2026-08-26 11:34:44,864 - __main__ - INFO - [19] ovs-1: CPU=0.00%, PPS=18, DropRate=0.750
+2026-08-26 11:34:44,864 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.69% > target+margin 3.50%, overshoot=1.69%, drop_rate=0.950
+2026-08-26 11:34:44,864 - __main__ - INFO - [19] ovs-2: CPU=4.64%, PPS=18,317, DropRate=0.950
+2026-08-26 11:34:45,363 - __main__ - WARNING - [20] No metrics available
+2026-08-26 11:34:45,864 - __main__ - INFO - [21] ovs-1: CPU=2.00%, PPS=13, DropRate=0.000
+2026-08-26 11:34:45,865 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.40% > target+margin 3.50%, overshoot=1.40%, drop_rate=0.950
+2026-08-26 11:34:45,865 - __main__ - INFO - [21] ovs-2: CPU=1.60%, PPS=4,887, DropRate=0.950
+2026-08-26 11:34:46,364 - __main__ - INFO - [22] ovs-1: CPU=0.00%, PPS=11, DropRate=0.950
+2026-08-26 11:34:46,365 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 3.52% > target+margin 3.50%, overshoot=0.52%, drop_rate=0.950
+2026-08-26 11:34:46,365 - __main__ - INFO - [22] ovs-2: CPU=1.25%, PPS=4,911, DropRate=0.950
+2026-08-26 11:34:46,864 - __main__ - INFO - [23] ovs-1: CPU=3.69%, PPS=24,590, DropRate=0.000
+2026-08-26 11:34:46,865 - __main__ - INFO - [23] ovs-2: CPU=2.64%, PPS=4,280, DropRate=0.550
+2026-08-26 11:34:47,365 - __main__ - INFO - [24] ovs-1: CPU=2.75%, PPS=16,348, DropRate=0.000
+2026-08-26 11:34:47,365 - __main__ - INFO - [24] ovs-2: CPU=1.61%, PPS=9,547, DropRate=0.950
+2026-08-26 11:34:47,865 - __main__ - INFO - [25] ovs-1: CPU=4.89%, PPS=44,709, DropRate=0.000
+2026-08-26 11:34:47,865 - __main__ - INFO - [25] ovs-2: CPU=1.47%, PPS=13,475, DropRate=0.250
+/home/stefan/LQR/src/lqr_controller_v2.py:231: RuntimeWarning: divide by zero encountered in scalar divide
+  hard_component = (overshoot / max_overshoot) ** 0.5 * 0.95
+2026-08-26 11:34:48,365 - __main__ - INFO - [26] ovs-1: CPU=6.80%, PPS=42,004, DropRate=0.950
+2026-08-26 11:34:48,365 - __main__ - INFO - [26] ovs-2: CPU=1.44%, PPS=12,597, DropRate=0.450
+2026-08-26 11:34:48,865 - __main__ - INFO - [27] ovs-1: CPU=2.19%, PPS=15,323, DropRate=0.650
+2026-08-26 11:34:48,865 - __main__ - INFO - [27] ovs-2: CPU=4.18%, PPS=29,258, DropRate=0.000
+2026-08-26 11:34:49,365 - __main__ - INFO - [28] ovs-1: CPU=1.28%, PPS=12,028, DropRate=0.600
+2026-08-26 11:34:49,365 - __main__ - INFO - [28] ovs-2: CPU=6.95%, PPS=46,349, DropRate=0.250
+2026-08-26 11:34:49,865 - __main__ - INFO - [29] ovs-1: CPU=2.05%, PPS=17,866, DropRate=0.000
+2026-08-26 11:34:49,865 - __main__ - INFO - [29] ovs-2: CPU=4.32%, PPS=37,702, DropRate=0.950
+2026-08-26 11:34:50,365 - __main__ - INFO - [30] ovs-1: CPU=5.36%, PPS=46,024, DropRate=0.100
+2026-08-26 11:34:50,365 - __main__ - INFO - [30] ovs-2: CPU=2.87%, PPS=7,446, DropRate=0.950
+2026-08-26 11:34:50,865 - __main__ - WARNING - [31] No metrics available
+2026-08-26 11:34:51,365 - __main__ - INFO - [32] ovs-1: CPU=6.03%, PPS=47,678, DropRate=0.150
+2026-08-26 11:34:51,366 - __main__ - INFO - [32] ovs-2: CPU=0.33%, PPS=2,635, DropRate=0.300
+2026-08-26 11:34:51,865 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.65% > target+margin 3.50%, overshoot=1.65%, drop_rate=0.950
+2026-08-26 11:34:51,865 - __main__ - INFO - [33] ovs-1: CPU=5.65%, PPS=46,964, DropRate=0.950
+2026-08-26 11:34:51,866 - __main__ - INFO - [33] ovs-2: CPU=0.69%, PPS=5,774, DropRate=0.550
+2026-08-26 11:34:52,366 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 3.92% > target+margin 3.50%, overshoot=0.92%, drop_rate=0.950
+2026-08-26 11:34:52,366 - __main__ - INFO - [34] ovs-1: CPU=3.11%, PPS=23,314, DropRate=0.950
+2026-08-26 11:34:52,366 - __main__ - INFO - [34] ovs-2: CPU=3.23%, PPS=24,237, DropRate=0.000
+2026-08-26 11:34:52,866 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.33% > target+margin 3.50%, overshoot=1.33%, drop_rate=0.950
+2026-08-26 11:34:52,866 - __main__ - INFO - [35] ovs-1: CPU=2.51%, PPS=3,714, DropRate=0.950
+2026-08-26 11:34:52,866 - __main__ - INFO - [35] ovs-2: CPU=5.86%, PPS=42,781, DropRate=0.000
+2026-08-26 11:34:53,366 - __main__ - INFO - [36] ovs-1: CPU=2.30%, PPS=2,648, DropRate=0.950
+2026-08-26 11:34:53,366 - __main__ - INFO - [36] ovs-2: CPU=5.96%, PPS=52,816, DropRate=0.950
+2026-08-26 11:34:53,866 - __main__ - INFO - [37] ovs-1: CPU=0.92%, PPS=5,366, DropRate=0.950
+2026-08-26 11:34:53,866 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.50% > target+margin 3.50%, overshoot=1.50%, drop_rate=0.950
+2026-08-26 11:34:53,866 - __main__ - INFO - [37] ovs-2: CPU=5.14%, PPS=30,130, DropRate=0.950
+2026-08-26 11:34:54,366 - __main__ - INFO - [38] ovs-1: CPU=2.07%, PPS=4,902, DropRate=0.000
+2026-08-26 11:34:54,366 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.50% > target+margin 3.50%, overshoot=1.50%, drop_rate=0.950
+2026-08-26 11:34:54,366 - __main__ - INFO - [38] ovs-2: CPU=4.07%, PPS=4,897, DropRate=0.950
+2026-08-26 11:34:54,866 - __main__ - INFO - [39] ovs-1: CPU=5.30%, PPS=40,999, DropRate=0.150
+2026-08-26 11:34:54,866 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 3.83% > target+margin 3.50%, overshoot=0.83%, drop_rate=0.950
+2026-08-26 11:34:54,866 - __main__ - INFO - [39] ovs-2: CPU=2.42%, PPS=3,279, DropRate=0.950
+2026-08-26 11:34:55,366 - __main__ - INFO - [40] ovs-1: CPU=5.91%, PPS=47,288, DropRate=0.150
+2026-08-26 11:34:55,366 - __main__ - INFO - [40] ovs-2: CPU=0.34%, PPS=2,711, DropRate=0.650
+2026-08-26 11:34:55,866 - __main__ - WARNING - [41] No metrics available
+2026-08-26 11:34:56,366 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.06% > target+margin 3.50%, overshoot=1.06%, drop_rate=0.950
+2026-08-26 11:34:56,367 - __main__ - INFO - [42] ovs-1: CPU=4.52%, PPS=41,938, DropRate=0.950
+2026-08-26 11:34:56,367 - __main__ - INFO - [42] ovs-2: CPU=1.76%, PPS=16,331, DropRate=0.250
+2026-08-26 11:34:56,866 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.06% > target+margin 3.50%, overshoot=1.06%, drop_rate=0.950
+2026-08-26 11:34:56,867 - __main__ - INFO - [43] ovs-1: CPU=4.23%, PPS=36,110, DropRate=0.950
+2026-08-26 11:34:56,867 - __main__ - INFO - [43] ovs-2: CPU=2.17%, PPS=18,526, DropRate=0.350
+2026-08-26 11:34:57,367 - __main__ - INFO - [44] ovs-1: CPU=0.40%, PPS=2,901, DropRate=0.950
+2026-08-26 11:34:57,367 - __main__ - INFO - [44] ovs-2: CPU=5.85%, PPS=42,341, DropRate=0.050
+2026-08-26 11:34:57,867 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 3.86% > target+margin 3.50%, overshoot=0.86%, drop_rate=0.950
+2026-08-26 11:34:57,867 - __main__ - INFO - [45] ovs-1: CPU=2.41%, PPS=3,307, DropRate=0.950
+2026-08-26 11:34:57,867 - __main__ - INFO - [45] ovs-2: CPU=5.95%, PPS=47,477, DropRate=0.150
+2026-08-26 11:34:58,367 - __main__ - INFO - [46] ovs-1: CPU=0.33%, PPS=2,770, DropRate=0.950
+2026-08-26 11:34:58,367 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.99% > target+margin 3.50%, overshoot=1.99%, drop_rate=0.950
+2026-08-26 11:34:58,367 - __main__ - INFO - [46] ovs-2: CPU=5.94%, PPS=50,545, DropRate=0.950
+2026-08-26 11:34:58,867 - __main__ - INFO - [47] ovs-1: CPU=1.39%, PPS=7,087, DropRate=0.300
+2026-08-26 11:34:58,867 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.09% > target+margin 3.50%, overshoot=1.09%, drop_rate=0.950
+2026-08-26 11:34:58,867 - __main__ - INFO - [47] ovs-2: CPU=2.17%, PPS=11,109, DropRate=0.950
+2026-08-26 11:34:59,367 - __main__ - INFO - [48] ovs-1: CPU=4.14%, PPS=39,380, DropRate=0.200
+2026-08-26 11:34:59,367 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.09% > target+margin 3.50%, overshoot=1.09%, drop_rate=0.950
+2026-08-26 11:34:59,367 - __main__ - INFO - [48] ovs-2: CPU=0.00%, PPS=26, DropRate=0.950
+2026-08-26 11:34:59,867 - __main__ - INFO - [49] ovs-1: CPU=6.32%, PPS=55,831, DropRate=0.000
+2026-08-26 11:34:59,867 - __main__ - INFO - [49] ovs-2: CPU=2.00%, PPS=17, DropRate=0.950
+2026-08-26 11:35:00,367 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 3.80% > target+margin 3.50%, overshoot=0.80%, drop_rate=0.950
+2026-08-26 11:35:00,367 - __main__ - INFO - [50] ovs-1: CPU=6.36%, PPS=48,170, DropRate=0.950
+2026-08-26 11:35:00,367 - __main__ - INFO - [50] ovs-2: CPU=0.00%, PPS=1, DropRate=0.950
+2026-08-26 11:35:00,867 - __main__ - WARNING - [51] No metrics available
+2026-08-26 11:35:01,367 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.70% > target+margin 3.50%, overshoot=1.70%, drop_rate=0.950
+2026-08-26 11:35:01,368 - __main__ - INFO - [52] ovs-1: CPU=5.43%, PPS=11,424, DropRate=0.950
+2026-08-26 11:35:01,368 - __main__ - INFO - [52] ovs-2: CPU=0.00%, PPS=13, DropRate=0.950
+2026-08-26 11:35:01,868 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 3.80% > target+margin 3.50%, overshoot=0.80%, drop_rate=0.950
+2026-08-26 11:35:01,868 - __main__ - INFO - [53] ovs-1: CPU=1.14%, PPS=4,887, DropRate=0.950
+2026-08-26 11:35:01,868 - __main__ - INFO - [53] ovs-2: CPU=0.00%, PPS=5, DropRate=0.750
+2026-08-26 11:35:02,368 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 4.70% > target+margin 3.50%, overshoot=1.70%, drop_rate=0.950
+2026-08-26 11:35:02,368 - __main__ - INFO - [54] ovs-1: CPU=3.95%, PPS=4,883, DropRate=0.950
+2026-08-26 11:35:02,368 - __main__ - INFO - [54] ovs-2: CPU=0.00%, PPS=9, DropRate=0.750
+2026-08-26 11:35:02,868 - __main__ - INFO - [55] ovs-1: CPU=1.92%, PPS=4,879, DropRate=0.950
+2026-08-26 11:35:02,868 - __main__ - INFO - [55] ovs-2: CPU=2.00%, PPS=5, DropRate=0.000
+2026-08-26 11:35:03,368 - __main__ - INFO - [56] ovs-1: CPU=1.59%, PPS=4,895, DropRate=0.950
+2026-08-26 11:35:03,368 - __main__ - INFO - [56] ovs-2: CPU=0.00%, PPS=5, DropRate=0.950
+2026-08-26 11:35:03,868 - __main__ - INFO - [57] ovs-1: CPU=1.50%, PPS=4,908, DropRate=0.500
+2026-08-26 11:35:03,868 - __main__ - INFO - [57] ovs-2: CPU=0.00%, PPS=11, DropRate=0.750
+2026-08-26 11:35:04,368 - __main__ - INFO - [58] ovs-1: CPU=3.90%, PPS=33,566, DropRate=0.000
+2026-08-26 11:35:04,368 - __main__ - INFO - [58] ovs-2: CPU=0.00%, PPS=5, DropRate=0.750
+2026-08-26 11:35:04,868 - __main__ - INFO - [59] ovs-1: CPU=6.05%, PPS=65,995, DropRate=0.250
+2026-08-26 11:35:04,868 - __main__ - INFO - [59] ovs-2: CPU=0.00%, PPS=9, DropRate=0.750
+2026-08-26 11:35:05,368 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 3.63% > target+margin 3.50%, overshoot=0.63%, drop_rate=0.950
+2026-08-26 11:35:05,368 - __main__ - INFO - [60] ovs-1: CPU=6.34%, PPS=53,228, DropRate=0.950
+2026-08-26 11:35:05,368 - __main__ - INFO - [60] ovs-2: CPU=0.00%, PPS=13, DropRate=0.750
+2026-08-26 11:35:05,868 - __main__ - WARNING - [61] No metrics available
+2026-08-26 11:35:06,368 - __main__ - INFO - [62] ovs-1: CPU=2.64%, PPS=8,920, DropRate=0.600
+2026-08-26 11:35:06,369 - __main__ - INFO - [62] ovs-2: CPU=0.00%, PPS=13, DropRate=0.750
+2026-08-26 11:35:06,869 - lqr_controller_v2 - INFO - SOFT LIMIT: CPU 3.63% > target+margin 3.50%, overshoot=0.63%, drop_rate=0.950
+2026-08-26 11:35:06,869 - __main__ - INFO - [63] ovs-1: CPU=2.90%, PPS=2,073, DropRate=0.950
+2026-08-26 11:35:06,869 - __main__ - INFO - [63] ovs-2: CPU=0.01%, PPS=17, DropRate=0.750
+2026-08-26 11:35:07,369 - __main__ - INFO - [64] ovs-1: CPU=0.07%, PPS=13, DropRate=0.950
+2026-08-26 11:35:07,369 - __main__ - INFO - [64] ovs-2: CPU=2.05%, PPS=9, DropRate=0.000
+2026-08-26 11:35:07,869 - __main__ - INFO - [65] ovs-1: CPU=0.00%, PPS=9, DropRate=0.400
+2026-08-26 11:35:07,869 - __main__ - INFO - [65] ovs-2: CPU=2.00%, PPS=9, DropRate=0.800
+2026-08-26 11:35:08,368 - __main__ - WARNING - [66] No metrics available
+2026-08-26 11:35:08,869 - __main__ - WARNING - [67] No metrics available
+2026-08-26 11:35:09,369 - __main__ - WARNING - [68] No metrics available
+2026-08-26 11:35:09,869 - __main__ - WARNING - [69] No metrics available
+2026-08-26 11:35:10,370 - __main__ - WARNING - [70] No metrics available
+2026-08-26 11:35:10,870 - __main__ - WARNING - [71] No metrics available

@@ -1,0 +1,234 @@
+2026-08-31 21:54:05,835 - __main__ - INFO - Loading config from /home/stefan/LQR/config/multi_lqr_config.yaml
+2026-08-31 21:54:05,838 - lqr_controller_v2 - INFO - LQR Controller V2 initialized with target CPU: 5.0%
+2026-08-31 21:54:05,838 - lqr_controller_v2 - INFO - Sampling time dt: 0.5s
+2026-08-31 21:54:05,838 - lqr_controller_v2 - INFO - Drop rate levels: 20 levels
+2026-08-31 21:54:05,838 - lqr_controller_v2 - INFO - LQR Gain K: [[-0.25622322 -0.30311079]]
+2026-08-31 21:54:05,838 - lqr_controller_v2 - INFO - Soft limit: enabled
+2026-08-31 21:54:05,838 - lqr_controller_v2 - INFO - Prediction: enabled
+2026-08-31 21:54:05,839 - lqr_controller_v2 - INFO - LQR Controller V2 initialized with target CPU: 5.0%
+2026-08-31 21:54:05,839 - lqr_controller_v2 - INFO - Sampling time dt: 0.5s
+2026-08-31 21:54:05,839 - lqr_controller_v2 - INFO - Drop rate levels: 20 levels
+2026-08-31 21:54:05,839 - lqr_controller_v2 - INFO - LQR Gain K: [[-0.25622322 -0.30311079]]
+2026-08-31 21:54:05,839 - lqr_controller_v2 - INFO - Soft limit: enabled
+2026-08-31 21:54:05,839 - lqr_controller_v2 - INFO - Prediction: enabled
+2026-08-31 21:54:05,839 - __main__ - INFO - Multi-Namespace LQR Control V2 initialized
+2026-08-31 21:54:05,839 - __main__ - INFO - Interface: enp5s0np0
+2026-08-31 21:54:05,839 - __main__ - INFO - Sampling time: 0.5s
+2026-08-31 21:54:05,839 - __main__ - INFO - Soft limit: True
+2026-08-31 21:54:05,839 - __main__ - INFO - Prediction: True
+2026-08-31 21:54:05,839 - __main__ - INFO -   ovs-1: target=5.0%
+2026-08-31 21:54:05,839 - __main__ - INFO -   ovs-2: target=5.0%
+2026-08-31 21:54:05,839 - ovs_lqr_control - INFO - Loading XDP program from /home/stefan/LQR/xdp/ovs_rate_limiter.bpf.c
+2026-08-31 21:54:06,846 - ovs_lqr_control - INFO - BPF program compiled successfully
+2026-08-31 21:54:06,846 - ovs_lqr_control - INFO - BPF maps obtained
+2026-08-31 21:54:06,846 - ovs_lqr_control - INFO - Initializing IP/MAC mappings...
+2026-08-31 21:54:06,849 - ovs_lqr_control - INFO -   Mapped 192.168.1.0/24 -> namespace 0 (ovs-1)
+2026-08-31 21:54:06,850 - ovs_lqr_control - INFO -   Mapped 192.168.2.0/24 -> namespace 1 (ovs-2)
+2026-08-31 21:54:06,851 - ovs_lqr_control - INFO - Mappings initialized
+2026-08-31 21:54:06,851 - ovs_lqr_control - INFO - Mappings initialized
+2026-08-31 21:54:06,851 - ovs_lqr_control - INFO - XDP function loaded
+2026-08-31 21:54:06,862 - ovs_lqr_control - INFO - ✓ XDP program attached to enp5s0np0 (SKB mode)
+2026-08-31 21:54:06,862 - __main__ - INFO - ✓ XDP program loaded successfully
+2026-08-31 21:54:06,862 - __main__ - INFO - Starting multi-namespace control loop...
+2026-08-31 21:54:06,862 - __main__ - INFO - 
+2026-08-31 21:54:06,863 - ovs_lqr_control - INFO - Opened log file: /home/stefan/cpu_packet_monitoring/network_metrics_2026-08-31_21-54-02.log.jsonl
+2026-08-31 21:54:06,863 - lqr_controller_v2 - INFO - CPU: 0.11% | Error: -4.89% | State: [-4.89, 0.00] | Control: -1.252 | Drop Rate: LQR=-1.252 -> Adj=-1.252 -> Final=0.000
+2026-08-31 21:54:06,863 - __main__ - INFO - [1] ovs-1: CPU=0.11%, PPS=20, DropRate=0.000
+2026-08-31 21:54:06,863 - lqr_controller_v2 - INFO - CPU: 0.11% | Error: -4.89% | State: [-4.89, 0.00] | Control: -1.252 | Drop Rate: LQR=-1.252 -> Adj=-1.252 -> Final=0.000
+2026-08-31 21:54:06,863 - __main__ - INFO - [1] ovs-2: CPU=0.11%, PPS=20, DropRate=0.000
+2026-08-31 21:54:07,363 - lqr_controller_v2 - INFO - CPU: 2.00% | Error: -2.43% | State: [-2.43, 4.90] | Control: 0.862 | Drop Rate: LQR=0.862 -> Adj=0.862 -> Final=0.850
+2026-08-31 21:54:07,363 - __main__ - INFO - [2] ovs-1: CPU=2.00%, PPS=11, DropRate=0.850
+2026-08-31 21:54:07,363 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -0.23] | Control: -1.350 | Drop Rate: LQR=-1.350 -> Adj=-1.350 -> Final=0.000
+2026-08-31 21:54:07,363 - __main__ - INFO - [2] ovs-2: CPU=0.00%, PPS=11, DropRate=0.000
+2026-08-31 21:54:07,863 - __main__ - WARNING - [3] No metrics available
+2026-08-31 21:54:08,364 - lqr_controller_v2 - INFO - CPU: 0.11% | Error: -4.92% | State: [-4.92, -4.97] | Control: -2.767 | Drop Rate: LQR=-2.767 -> Adj=-2.767 -> Final=0.000
+2026-08-31 21:54:08,364 - __main__ - INFO - [4] ovs-1: CPU=0.00%, PPS=21, DropRate=0.000
+2026-08-31 21:54:08,364 - lqr_controller_v2 - INFO - CPU: 0.11% | Error: -0.65% | State: [-0.65, 8.69] | Control: 2.468 | Drop Rate: LQR=2.473 -> Adj=2.473 -> Final=0.950
+2026-08-31 21:54:08,364 - __main__ - INFO - [4] ovs-2: CPU=7.11%, PPS=52,543, DropRate=0.950
+2026-08-31 21:54:08,864 - lqr_controller_v2 - INFO - CPU: 0.06% | Error: -4.96% | State: [-4.96, -0.08] | Control: -1.294 | Drop Rate: LQR=-1.294 -> Adj=-1.294 -> Final=0.000
+2026-08-31 21:54:08,864 - __main__ - INFO - [5] ovs-1: CPU=0.00%, PPS=15, DropRate=0.000
+2026-08-31 21:54:08,864 - lqr_controller_v2 - INFO - CPU: 3.21% | Error: -1.10% | State: [-1.10, -0.90] | Control: -0.557 | Drop Rate: LQR=-0.557 -> Adj=-0.557 -> Final=0.000
+2026-08-31 21:54:08,864 - __main__ - INFO - [5] ovs-2: CPU=6.30%, PPS=45,392, DropRate=0.000
+2026-08-31 21:54:09,364 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -0.08] | Control: -1.304 | Drop Rate: LQR=-1.304 -> Adj=-1.304 -> Final=0.000
+2026-08-31 21:54:09,364 - __main__ - INFO - [6] ovs-1: CPU=0.00%, PPS=13, DropRate=0.000
+2026-08-31 21:54:09,364 - lqr_controller_v2 - INFO - CPU: 5.04% | Error: -0.34% | State: [-0.34, 1.54] | Control: 0.380 | Drop Rate: LQR=0.380 -> Adj=0.380 -> Final=0.400
+2026-08-31 21:54:09,364 - __main__ - INFO - [6] ovs-2: CPU=5.04%, PPS=23,836, DropRate=0.400
+2026-08-31 21:54:09,864 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:09,864 - __main__ - INFO - [7] ovs-1: CPU=0.00%, PPS=19, DropRate=0.000
+2026-08-31 21:54:09,864 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.72% > target+margin 5.50%, overshoot=1.72%, drop_rate=0.277
+2026-08-31 21:54:09,865 - lqr_controller_v2 - INFO - CPU: 6.30% | Error: 1.72% | State: [1.72, 4.10] | Control: 1.684 | Drop Rate: LQR=1.693 -> Adj=1.693 -> Final=0.950
+2026-08-31 21:54:09,865 - __main__ - INFO - [7] ovs-2: CPU=6.36%, PPS=54,718, DropRate=0.950
+2026-08-31 21:54:10,364 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -3.80% | State: [-3.80, 2.40] | Control: -0.246 | Drop Rate: LQR=-0.246 -> Adj=-0.246 -> Final=0.000
+2026-08-31 21:54:10,364 - __main__ - INFO - [8] ovs-1: CPU=2.00%, PPS=13, DropRate=0.000
+2026-08-31 21:54:10,365 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 7.46% > target+margin 5.50%, overshoot=2.46%, drop_rate=0.355
+2026-08-31 21:54:10,365 - lqr_controller_v2 - INFO - CPU: 6.36% | Error: 2.46% | State: [2.46, 1.48] | Control: 1.077 | Drop Rate: LQR=1.077 -> Adj=1.077 -> Final=0.950
+2026-08-31 21:54:10,365 - __main__ - INFO - [8] ovs-2: CPU=8.18%, PPS=37,562, DropRate=0.950
+2026-08-31 21:54:10,864 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -2.40] | Control: -2.008 | Drop Rate: LQR=-2.008 -> Adj=-2.008 -> Final=0.000
+2026-08-31 21:54:10,864 - __main__ - INFO - [9] ovs-1: CPU=0.00%, PPS=13, DropRate=0.000
+2026-08-31 21:54:10,865 - lqr_controller_v2 - INFO - CPU: 6.30% | Error: -0.59% | State: [-0.59, -6.08] | Control: -1.995 | Drop Rate: LQR=-1.995 -> Adj=-1.995 -> Final=0.000
+2026-08-31 21:54:10,865 - __main__ - INFO - [9] ovs-2: CPU=2.32%, PPS=7,430, DropRate=0.000
+2026-08-31 21:54:11,364 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, 0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:11,365 - __main__ - INFO - [10] ovs-1: CPU=0.00%, PPS=9, DropRate=0.000
+2026-08-31 21:54:11,365 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.04% > target+margin 5.50%, overshoot=1.04%, drop_rate=0.194
+2026-08-31 21:54:11,365 - lqr_controller_v2 - INFO - CPU: 5.18% | Error: 1.04% | State: [1.04, 3.25] | Control: 1.250 | Drop Rate: LQR=1.250 -> Adj=1.250 -> Final=0.950
+2026-08-31 21:54:11,365 - __main__ - INFO - [10] ovs-2: CPU=5.18%, PPS=45,336, DropRate=0.950
+2026-08-31 21:54:11,864 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -3.80% | State: [-3.80, 2.40] | Control: -0.244 | Drop Rate: LQR=-0.244 -> Adj=-0.244 -> Final=0.000
+2026-08-31 21:54:11,865 - __main__ - INFO - [11] ovs-1: CPU=2.00%, PPS=13, DropRate=0.000
+2026-08-31 21:54:11,865 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 5.54% > target+margin 5.50%, overshoot=0.54%, drop_rate=0.123
+2026-08-31 21:54:11,865 - lqr_controller_v2 - INFO - CPU: 5.46% | Error: 0.54% | State: [0.54, -0.99] | Control: -0.161 | Drop Rate: LQR=-0.161 -> Adj=0.123 -> Final=0.100
+2026-08-31 21:54:11,865 - __main__ - INFO - [11] ovs-2: CPU=5.46%, PPS=23,863, DropRate=0.100
+2026-08-31 21:54:12,364 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -2.40] | Control: -2.009 | Drop Rate: LQR=-2.009 -> Adj=-2.009 -> Final=0.000
+2026-08-31 21:54:12,365 - __main__ - INFO - [12] ovs-1: CPU=0.00%, PPS=15, DropRate=0.000
+2026-08-31 21:54:12,365 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.64% > target+margin 5.50%, overshoot=1.64%, drop_rate=0.268
+2026-08-31 21:54:12,365 - lqr_controller_v2 - INFO - CPU: 5.46% | Error: 1.64% | State: [1.64, 2.19] | Control: 1.083 | Drop Rate: LQR=1.095 -> Adj=1.095 -> Final=0.950
+2026-08-31 21:54:12,365 - __main__ - INFO - [12] ovs-2: CPU=7.42%, PPS=56,054, DropRate=0.950
+2026-08-31 21:54:12,864 - __main__ - WARNING - [13] No metrics available
+2026-08-31 21:54:13,365 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -4.99% | State: [-4.99, 0.01] | Control: -1.277 | Drop Rate: LQR=-1.277 -> Adj=-1.277 -> Final=0.000
+2026-08-31 21:54:13,365 - __main__ - INFO - [14] ovs-1: CPU=0.01%, PPS=17, DropRate=0.000
+2026-08-31 21:54:13,365 - lqr_controller_v2 - INFO - CPU: 5.18% | Error: -1.00% | State: [-1.00, -5.27] | Control: -1.852 | Drop Rate: LQR=-1.852 -> Adj=-1.852 -> Final=0.000
+2026-08-31 21:54:13,365 - __main__ - INFO - [14] ovs-2: CPU=4.34%, PPS=10,764, DropRate=0.000
+2026-08-31 21:54:13,865 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -0.01] | Control: -1.284 | Drop Rate: LQR=-1.284 -> Adj=-1.284 -> Final=0.000
+2026-08-31 21:54:13,865 - __main__ - INFO - [15] ovs-1: CPU=0.00%, PPS=5, DropRate=0.000
+2026-08-31 21:54:13,866 - lqr_controller_v2 - INFO - CPU: 5.18% | Error: -0.51% | State: [-0.51, 0.97] | Control: 0.162 | Drop Rate: LQR=0.162 -> Adj=0.162 -> Final=0.150
+2026-08-31 21:54:13,866 - __main__ - INFO - [15] ovs-2: CPU=3.61%, PPS=14,163, DropRate=0.150
+2026-08-31 21:54:14,365 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, 0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:14,365 - __main__ - INFO - [16] ovs-1: CPU=0.00%, PPS=9, DropRate=0.000
+2026-08-31 21:54:14,366 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.45% > target+margin 5.50%, overshoot=1.45%, drop_rate=0.246
+2026-08-31 21:54:14,366 - lqr_controller_v2 - INFO - CPU: 5.46% | Error: 1.45% | State: [1.45, 3.93] | Control: 1.565 | Drop Rate: LQR=1.585 -> Adj=1.585 -> Final=0.950
+2026-08-31 21:54:14,366 - __main__ - INFO - [16] ovs-2: CPU=6.19%, PPS=59,865, DropRate=0.950
+2026-08-31 21:54:14,865 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, 0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:14,865 - __main__ - INFO - [17] ovs-1: CPU=0.00%, PPS=7, DropRate=0.000
+2026-08-31 21:54:14,866 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.25% > target+margin 5.50%, overshoot=1.25%, drop_rate=0.221
+2026-08-31 21:54:14,866 - lqr_controller_v2 - INFO - CPU: 6.19% | Error: 1.25% | State: [1.25, -0.41] | Control: 0.195 | Drop Rate: LQR=0.195 -> Adj=0.221 -> Final=0.200
+2026-08-31 21:54:14,866 - __main__ - INFO - [17] ovs-2: CPU=6.28%, PPS=37,334, DropRate=0.200
+2026-08-31 21:54:15,365 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:15,365 - __main__ - INFO - [18] ovs-1: CPU=0.00%, PPS=9, DropRate=0.000
+2026-08-31 21:54:15,366 - lqr_controller_v2 - INFO - CPU: 4.35% | Error: -1.23% | State: [-1.23, -4.95] | Control: -1.816 | Drop Rate: LQR=-1.816 -> Adj=-1.816 -> Final=0.000
+2026-08-31 21:54:15,366 - __main__ - INFO - [18] ovs-2: CPU=4.35%, PPS=32,977, DropRate=0.000
+2026-08-31 21:54:15,865 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, 0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:15,865 - __main__ - INFO - [19] ovs-1: CPU=0.00%, PPS=13, DropRate=0.000
+2026-08-31 21:54:15,865 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.84% > target+margin 5.50%, overshoot=1.84%, drop_rate=0.291
+2026-08-31 21:54:15,866 - lqr_controller_v2 - INFO - CPU: 6.19% | Error: 1.84% | State: [1.84, 6.14] | Control: 2.334 | Drop Rate: LQR=2.346 -> Adj=2.346 -> Final=0.950
+2026-08-31 21:54:15,866 - __main__ - INFO - [19] ovs-2: CPU=6.35%, PPS=56,453, DropRate=0.950
+2026-08-31 21:54:16,365 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, 0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:16,366 - __main__ - INFO - [20] ovs-1: CPU=0.00%, PPS=9, DropRate=0.000
+2026-08-31 21:54:16,366 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 5.96% > target+margin 5.50%, overshoot=0.96%, drop_rate=0.184
+2026-08-31 21:54:16,366 - lqr_controller_v2 - INFO - CPU: 6.19% | Error: 0.96% | State: [0.96, -1.77] | Control: -0.292 | Drop Rate: LQR=-0.292 -> Adj=0.184 -> Final=0.200
+2026-08-31 21:54:16,366 - __main__ - INFO - [20] ovs-2: CPU=5.88%, PPS=30,530, DropRate=0.200
+2026-08-31 21:54:16,865 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -3.80% | State: [-3.80, 2.40] | Control: -0.246 | Drop Rate: LQR=-0.246 -> Adj=-0.246 -> Final=0.000
+2026-08-31 21:54:16,866 - __main__ - INFO - [21] ovs-1: CPU=2.00%, PPS=7, DropRate=0.000
+2026-08-31 21:54:16,866 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 5.61% > target+margin 5.50%, overshoot=0.61%, drop_rate=0.134
+2026-08-31 21:54:16,866 - lqr_controller_v2 - INFO - CPU: 5.88% | Error: 0.61% | State: [0.61, -0.69] | Control: -0.054 | Drop Rate: LQR=-0.053 -> Adj=0.134 -> Final=0.150
+2026-08-31 21:54:16,866 - __main__ - INFO - [21] ovs-2: CPU=5.43%, PPS=50,394, DropRate=0.150
+2026-08-31 21:54:17,365 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -2.40] | Control: -2.008 | Drop Rate: LQR=-2.008 -> Adj=-2.008 -> Final=0.000
+2026-08-31 21:54:17,366 - __main__ - INFO - [22] ovs-1: CPU=0.00%, PPS=17, DropRate=0.000
+2026-08-31 21:54:17,366 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 7.62% > target+margin 5.50%, overshoot=2.62%, drop_rate=0.372
+2026-08-31 21:54:17,366 - lqr_controller_v2 - INFO - CPU: 5.88% | Error: 2.62% | State: [2.62, 4.02] | Control: 1.889 | Drop Rate: LQR=1.895 -> Adj=1.895 -> Final=0.950
+2026-08-31 21:54:17,366 - __main__ - INFO - [22] ovs-2: CPU=8.55%, PPS=52,888, DropRate=0.950
+2026-08-31 21:54:17,865 - __main__ - WARNING - [23] No metrics available
+2026-08-31 21:54:18,366 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, 0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:18,366 - __main__ - INFO - [24] ovs-1: CPU=0.00%, PPS=5, DropRate=0.000
+2026-08-31 21:54:18,367 - lqr_controller_v2 - INFO - CPU: 5.88% | Error: -0.52% | State: [-0.52, -6.28] | Control: -2.037 | Drop Rate: LQR=-2.037 -> Adj=-2.037 -> Final=0.000
+2026-08-31 21:54:18,367 - __main__ - INFO - [24] ovs-2: CPU=4.88%, PPS=15,541, DropRate=0.000
+2026-08-31 21:54:18,866 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -3.80% | State: [-3.80, 2.40] | Control: -0.244 | Drop Rate: LQR=-0.244 -> Adj=-0.244 -> Final=0.000
+2026-08-31 21:54:18,867 - __main__ - INFO - [25] ovs-1: CPU=2.00%, PPS=19, DropRate=0.000
+2026-08-31 21:54:18,867 - lqr_controller_v2 - INFO - CPU: 5.43% | Error: -1.20% | State: [-1.20, -1.36] | Control: -0.718 | Drop Rate: LQR=-0.718 -> Adj=-0.718 -> Final=0.000
+2026-08-31 21:54:18,867 - __main__ - INFO - [25] ovs-2: CPU=2.43%, PPS=10,025, DropRate=0.000
+2026-08-31 21:54:19,366 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -2.40] | Control: -2.010 | Drop Rate: LQR=-2.010 -> Adj=-2.010 -> Final=0.000
+2026-08-31 21:54:19,367 - __main__ - INFO - [26] ovs-1: CPU=0.00%, PPS=15, DropRate=0.000
+2026-08-31 21:54:19,367 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.87% > target+margin 5.50%, overshoot=1.87%, drop_rate=0.293
+2026-08-31 21:54:19,367 - lqr_controller_v2 - INFO - CPU: 5.43% | Error: 1.87% | State: [1.87, 6.13] | Control: 2.336 | Drop Rate: LQR=2.356 -> Adj=2.356 -> Final=0.950
+2026-08-31 21:54:19,367 - __main__ - INFO - [26] ovs-2: CPU=6.33%, PPS=60,029, DropRate=0.950
+2026-08-31 21:54:19,867 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, 0.00] | Control: -1.280 | Drop Rate: LQR=-1.280 -> Adj=-1.280 -> Final=0.000
+2026-08-31 21:54:19,867 - __main__ - INFO - [27] ovs-1: CPU=0.00%, PPS=15, DropRate=0.000
+2026-08-31 21:54:19,867 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.29% > target+margin 5.50%, overshoot=1.29%, drop_rate=0.226
+2026-08-31 21:54:19,867 - lqr_controller_v2 - INFO - CPU: 6.30% | Error: 1.29% | State: [1.29, -1.16] | Control: -0.020 | Drop Rate: LQR=-0.020 -> Adj=0.226 -> Final=0.250
+2026-08-31 21:54:19,867 - __main__ - INFO - [27] ovs-2: CPU=6.30%, PPS=38,172, DropRate=0.250
+2026-08-31 21:54:20,367 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:20,367 - __main__ - INFO - [28] ovs-1: CPU=0.00%, PPS=11, DropRate=0.000
+2026-08-31 21:54:20,367 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.54% > target+margin 5.50%, overshoot=1.54%, drop_rate=0.256
+2026-08-31 21:54:20,367 - lqr_controller_v2 - INFO - CPU: 6.30% | Error: 1.54% | State: [1.54, 0.50] | Control: 0.544 | Drop Rate: LQR=0.544 -> Adj=0.544 -> Final=0.550
+2026-08-31 21:54:20,367 - __main__ - INFO - [28] ovs-2: CPU=6.69%, PPS=32,098, DropRate=0.550
+2026-08-31 21:54:20,867 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, 0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:20,867 - __main__ - INFO - [29] ovs-1: CPU=0.00%, PPS=13, DropRate=0.000
+2026-08-31 21:54:20,867 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.27% > target+margin 5.50%, overshoot=1.27%, drop_rate=0.224
+2026-08-31 21:54:20,867 - lqr_controller_v2 - INFO - CPU: 6.33% | Error: 1.27% | State: [1.27, -0.54] | Control: 0.162 | Drop Rate: LQR=0.173 -> Adj=0.224 -> Final=0.200
+2026-08-31 21:54:20,867 - __main__ - INFO - [29] ovs-2: CPU=6.41%, PPS=55,159, DropRate=0.200
+2026-08-31 21:54:21,367 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, 0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:21,367 - __main__ - INFO - [30] ovs-1: CPU=0.00%, PPS=17, DropRate=0.000
+2026-08-31 21:54:21,367 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.24% > target+margin 5.50%, overshoot=1.24%, drop_rate=0.220
+2026-08-31 21:54:21,367 - lqr_controller_v2 - INFO - CPU: 6.33% | Error: 1.24% | State: [1.24, -0.05] | Control: 0.301 | Drop Rate: LQR=0.317 -> Adj=0.317 -> Final=0.300
+2026-08-31 21:54:21,367 - __main__ - INFO - [30] ovs-2: CPU=6.23%, PPS=57,714, DropRate=0.300
+2026-08-31 21:54:21,867 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:21,867 - __main__ - INFO - [31] ovs-1: CPU=0.00%, PPS=7, DropRate=0.000
+2026-08-31 21:54:21,867 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.36% > target+margin 5.50%, overshoot=1.36%, drop_rate=0.235
+2026-08-31 21:54:21,867 - lqr_controller_v2 - INFO - CPU: 6.33% | Error: 1.36% | State: [1.36, 0.23] | Control: 0.418 | Drop Rate: LQR=0.420 -> Adj=0.420 -> Final=0.400
+2026-08-31 21:54:21,867 - __main__ - INFO - [31] ovs-2: CPU=6.33%, PPS=51,138, DropRate=0.400
+2026-08-31 21:54:22,367 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, 0.00] | Control: -1.280 | Drop Rate: LQR=-1.280 -> Adj=-1.280 -> Final=0.000
+2026-08-31 21:54:22,367 - __main__ - INFO - [32] ovs-1: CPU=0.00%, PPS=20, DropRate=0.000
+2026-08-31 21:54:22,367 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.54% > target+margin 5.50%, overshoot=1.54%, drop_rate=0.256
+2026-08-31 21:54:22,367 - lqr_controller_v2 - INFO - CPU: 6.41% | Error: 1.54% | State: [1.54, 0.37] | Control: 0.505 | Drop Rate: LQR=0.509 -> Adj=0.509 -> Final=0.500
+2026-08-31 21:54:22,367 - __main__ - INFO - [32] ovs-2: CPU=6.58%, PPS=51,609, DropRate=0.500
+2026-08-31 21:54:22,866 - __main__ - WARNING - [33] No metrics available
+2026-08-31 21:54:23,367 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -3.80% | State: [-3.80, 2.40] | Control: -0.247 | Drop Rate: LQR=-0.247 -> Adj=-0.247 -> Final=0.000
+2026-08-31 21:54:23,368 - __main__ - INFO - [34] ovs-1: CPU=2.00%, PPS=3, DropRate=0.000
+2026-08-31 21:54:23,368 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 7.53% > target+margin 5.50%, overshoot=2.53%, drop_rate=0.363
+2026-08-31 21:54:23,368 - lqr_controller_v2 - INFO - CPU: 6.41% | Error: 2.53% | State: [2.53, 1.99] | Control: 1.251 | Drop Rate: LQR=1.259 -> Adj=1.259 -> Final=0.950
+2026-08-31 21:54:23,368 - __main__ - INFO - [34] ovs-2: CPU=8.36%, PPS=53,771, DropRate=0.950
+2026-08-31 21:54:23,868 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -2.40] | Control: -2.008 | Drop Rate: LQR=-2.008 -> Adj=-2.008 -> Final=0.000
+2026-08-31 21:54:23,868 - __main__ - INFO - [35] ovs-1: CPU=0.00%, PPS=16, DropRate=0.000
+2026-08-31 21:54:23,868 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 5.94% > target+margin 5.50%, overshoot=0.94%, drop_rate=0.182
+2026-08-31 21:54:23,868 - lqr_controller_v2 - INFO - CPU: 6.50% | Error: 0.94% | State: [0.94, -3.18] | Control: -0.724 | Drop Rate: LQR=-0.721 -> Adj=0.182 -> Final=0.200
+2026-08-31 21:54:23,868 - __main__ - INFO - [35] ovs-2: CPU=6.50%, PPS=51,539, DropRate=0.200
+2026-08-31 21:54:24,368 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, 0.00] | Control: -1.279 | Drop Rate: LQR=-1.279 -> Adj=-1.279 -> Final=0.000
+2026-08-31 21:54:24,368 - __main__ - INFO - [36] ovs-1: CPU=0.00%, PPS=11, DropRate=0.000
+2026-08-31 21:54:24,368 - lqr_controller_v2 - INFO - CPU: 6.50% | Error: 0.34% | State: [0.34, -1.19] | Control: -0.274 | Drop Rate: LQR=-0.274 -> Adj=0.036 -> Final=0.050
+2026-08-31 21:54:24,368 - __main__ - INFO - [36] ovs-2: CPU=4.57%, PPS=17,494, DropRate=0.050
+2026-08-31 21:54:24,868 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:24,868 - __main__ - INFO - [37] ovs-1: CPU=0.00%, PPS=13, DropRate=0.000
+2026-08-31 21:54:24,868 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 8.25% > target+margin 5.50%, overshoot=3.25%, drop_rate=0.432
+2026-08-31 21:54:24,868 - lqr_controller_v2 - INFO - CPU: 6.58% | Error: 3.25% | State: [3.25, 5.81] | Control: 2.592 | Drop Rate: LQR=2.611 -> Adj=2.611 -> Final=0.950
+2026-08-31 21:54:24,868 - __main__ - INFO - [37] ovs-2: CPU=8.36%, PPS=59,502, DropRate=0.950
+2026-08-31 21:54:25,368 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, 0.00] | Control: -1.280 | Drop Rate: LQR=-1.280 -> Adj=-1.280 -> Final=0.000
+2026-08-31 21:54:25,368 - __main__ - INFO - [38] ovs-1: CPU=0.00%, PPS=11, DropRate=0.000
+2026-08-31 21:54:25,368 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 5.79% > target+margin 5.50%, overshoot=0.79%, drop_rate=0.161
+2026-08-31 21:54:25,368 - lqr_controller_v2 - INFO - CPU: 6.50% | Error: 0.79% | State: [0.79, -4.91] | Control: -1.285 | Drop Rate: LQR=-1.285 -> Adj=0.161 -> Final=0.150
+2026-08-31 21:54:25,368 - __main__ - INFO - [38] ovs-2: CPU=6.25%, PPS=34,402, DropRate=0.150
+2026-08-31 21:54:25,868 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:25,868 - __main__ - INFO - [39] ovs-1: CPU=0.00%, PPS=15, DropRate=0.000
+2026-08-31 21:54:25,868 - lqr_controller_v2 - INFO - CPU: 6.25% | Error: 0.37% | State: [0.37, -0.84] | Control: -0.157 | Drop Rate: LQR=-0.157 -> Adj=0.098 -> Final=0.100
+2026-08-31 21:54:25,868 - __main__ - INFO - [39] ovs-2: CPU=4.79%, PPS=36,223, DropRate=0.100
+2026-08-31 21:54:26,368 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -3.80% | State: [-3.80, 2.40] | Control: -0.246 | Drop Rate: LQR=-0.246 -> Adj=-0.246 -> Final=0.000
+2026-08-31 21:54:26,368 - __main__ - INFO - [40] ovs-1: CPU=2.00%, PPS=9, DropRate=0.000
+2026-08-31 21:54:26,368 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 6.74% > target+margin 5.50%, overshoot=1.74%, drop_rate=0.279
+2026-08-31 21:54:26,368 - lqr_controller_v2 - INFO - CPU: 6.25% | Error: 1.74% | State: [1.74, 2.72] | Control: 1.270 | Drop Rate: LQR=1.277 -> Adj=1.277 -> Final=0.950
+2026-08-31 21:54:26,368 - __main__ - INFO - [40] ovs-2: CPU=6.33%, PPS=53,211, DropRate=0.950
+2026-08-31 21:54:26,868 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -4.40% | State: [-4.40, -1.20] | Control: -1.490 | Drop Rate: LQR=-1.490 -> Adj=-1.490 -> Final=0.000
+2026-08-31 21:54:26,868 - __main__ - INFO - [41] ovs-1: CPU=2.00%, PPS=11, DropRate=0.000
+2026-08-31 21:54:26,868 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 5.69% > target+margin 5.50%, overshoot=0.69%, drop_rate=0.146
+2026-08-31 21:54:26,868 - lqr_controller_v2 - INFO - CPU: 6.25% | Error: 0.69% | State: [0.69, -2.10] | Control: -0.459 | Drop Rate: LQR=-0.459 -> Adj=0.146 -> Final=0.150
+2026-08-31 21:54:26,868 - __main__ - INFO - [41] ovs-2: CPU=5.36%, PPS=25,855, DropRate=0.150
+2026-08-31 21:54:27,368 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -1.20] | Control: -1.645 | Drop Rate: LQR=-1.645 -> Adj=-1.645 -> Final=0.000
+2026-08-31 21:54:27,368 - __main__ - INFO - [42] ovs-1: CPU=0.00%, PPS=17, DropRate=0.000
+2026-08-31 21:54:27,368 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 5.73% > target+margin 5.50%, overshoot=0.73%, drop_rate=0.152
+2026-08-31 21:54:27,368 - lqr_controller_v2 - INFO - CPU: 5.64% | Error: 0.73% | State: [0.73, 0.08] | Control: 0.210 | Drop Rate: LQR=0.218 -> Adj=0.218 -> Final=0.200
+2026-08-31 21:54:27,369 - __main__ - INFO - [42] ovs-2: CPU=5.64%, PPS=54,053, DropRate=0.200
+2026-08-31 21:54:27,868 - __main__ - WARNING - [43] No metrics available
+2026-08-31 21:54:28,368 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -0.00] | Control: -1.281 | Drop Rate: LQR=-1.281 -> Adj=-1.281 -> Final=0.000
+2026-08-31 21:54:28,369 - __main__ - INFO - [44] ovs-1: CPU=0.00%, PPS=1, DropRate=0.000
+2026-08-31 21:54:28,369 - lqr_controller_v2 - INFO - SOFT LIMIT (hard): CPU 7.23% > target+margin 5.50%, overshoot=2.23%, drop_rate=0.332
+2026-08-31 21:54:28,369 - lqr_controller_v2 - INFO - CPU: 5.64% | Error: 2.23% | State: [2.23, 3.01] | Control: 1.484 | Drop Rate: LQR=1.484 -> Adj=1.484 -> Final=0.950
+2026-08-31 21:54:28,369 - __main__ - INFO - [44] ovs-2: CPU=8.29%, PPS=43,895, DropRate=0.950
+2026-08-31 21:54:28,869 - lqr_controller_v2 - INFO - CPU: 0.17% | Error: -4.78% | State: [-4.78, 0.44] | Control: -1.090 | Drop Rate: LQR=-1.090 -> Adj=-1.090 -> Final=0.000
+2026-08-31 21:54:28,869 - __main__ - INFO - [45] ovs-1: CPU=0.17%, PPS=23, DropRate=0.000
+2026-08-31 21:54:28,869 - lqr_controller_v2 - INFO - CPU: 5.64% | Error: -1.05% | State: [-1.05, -6.57] | Control: -2.259 | Drop Rate: LQR=-2.259 -> Adj=-2.259 -> Final=0.000
+2026-08-31 21:54:28,869 - __main__ - INFO - [45] ovs-2: CPU=0.17%, PPS=23, DropRate=0.000
+2026-08-31 21:54:29,369 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -0.44] | Control: -1.415 | Drop Rate: LQR=-1.415 -> Adj=-1.415 -> Final=0.000
+2026-08-31 21:54:29,369 - __main__ - INFO - [46] ovs-1: CPU=0.00%, PPS=3, DropRate=0.000
+2026-08-31 21:54:29,369 - lqr_controller_v2 - INFO - CPU: 5.36% | Error: -1.25% | State: [-1.25, -0.40] | Control: -0.441 | Drop Rate: LQR=-0.441 -> Adj=-0.441 -> Final=0.000
+2026-08-31 21:54:29,369 - __main__ - INFO - [46] ovs-2: CPU=0.00%, PPS=3, DropRate=0.000
+2026-08-31 21:54:29,869 - lqr_controller_v2 - INFO - CPU: 0.00% | Error: -5.00% | State: [-5.00, -0.00] | Control: -1.282 | Drop Rate: LQR=-1.282 -> Adj=-1.282 -> Final=0.000
+2026-08-31 21:54:29,869 - __main__ - INFO - [47] ovs-1: CPU=0.00%, PPS=11, DropRate=0.000
+2026-08-31 21:54:29,869 - lqr_controller_v2 - INFO - CPU: 0.17% | Error: -4.88% | State: [-4.88, -7.26] | Control: -3.451 | Drop Rate: LQR=-3.451 -> Adj=-3.451 -> Final=0.000
+2026-08-31 21:54:29,869 - __main__ - INFO - [47] ovs-2: CPU=0.00%, PPS=11, DropRate=0.000
+2026-08-31 21:54:30,368 - __main__ - WARNING - [48] No metrics available

@@ -1,0 +1,91 @@
+# LQR Control Configuration
+# OVS Namespace CPU Control System
+
+# Target Configuration - Multi-Namespace Support
+targets:
+  ovs-1:
+    enabled: true              # Enable control for this namespace
+    cpu_percent: 3.0           # Target CPU usage (%)
+    max_cpu_percent: 3.0       # Maximum allowed CPU (%)
+    min_cpu_percent: 0.0       # Minimum CPU (%)
+  
+  ovs-2:
+    enabled: true              # Enable control for this namespace
+    cpu_percent: 3.0           # Target CPU usage (%)
+    max_cpu_percent: 3.0       # Maximum allowed CPU (%)
+    min_cpu_percent: 0.0       # Minimum CPU (%)
+
+# Network Configuration
+network:
+  interface: "enp5s0np0"       # Physical interface for XDP
+  
+  # Namespace to IP/MAC mappings
+  namespaces:
+    ovs-1:
+      id: 0
+      ip_ranges:
+        - "192.168.1.0/24"     # Client1 -> Service1 traffic
+      mac_addresses: []
+    
+    ovs-2:
+      id: 1
+      ip_ranges:
+        - "192.168.2.0/24"     # Client2 -> Service2 traffic
+      mac_addresses: []
+
+# LQR Controller Parameters
+lqr:
+  # State-space model
+  dt: 1.0                      # Sampling time (seconds)
+  tau: 2.0                     # System time constant
+  
+  # Cost matrices
+  Q:                           # State cost matrix [error, error_derivative]
+    - [10.0, 0.0]
+    - [0.0, 1.0]
+  
+  R:                           # Control cost matrix [drop_rate]
+    - [0.1]
+  
+  # Control limits
+  max_drop_rate: 0.95          # Maximum drop rate (95%)
+  min_drop_rate: 0.0           # Minimum drop rate (0%)
+  max_control_change: 0.1      # Maximum change per iteration
+  
+  # Smoothing
+  state_history_length: 5      # Number of samples for smoothing
+
+# PID Controller Parameters (alternative)
+pid:
+  Kp: 0.1                      # Proportional gain
+  Ki: 0.01                     # Integral gain
+  Kd: 0.05                     # Derivative gain
+  max_output: 0.95             # Maximum output (drop rate)
+
+# Monitoring
+monitoring:
+  metrics_dir: "/home/stefan/cpu_packet_monitoring"
+  log_dir: "/home/stefan/LQR/logs"
+  
+  # Logging
+  log_level: "INFO"            # DEBUG, INFO, WARNING, ERROR
+  log_interval: 10             # Console log every N iterations
+  
+  # Metrics
+  metrics_update_interval: 1.0 # How often to read metrics (seconds)
+
+# XDP Program
+xdp:
+  program_path: "/home/stefan/LQR/xdp/ovs_rate_limiter.bpf.c"
+  
+  # Drop strategy
+  drop_strategy: "probabilistic"  # probabilistic, deterministic, token_bucket
+  
+  # Statistics
+  stats_interval: 60           # Print XDP stats every N seconds
+
+# Safety
+safety:
+  emergency_cpu_threshold: 15.0  # Force max drop rate if CPU > this
+  min_pps_threshold: 100         # Don't control if PPS < this
+  watchdog_timeout: 30           # Restart if no metrics for N seconds

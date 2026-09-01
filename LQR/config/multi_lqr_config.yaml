@@ -1,0 +1,12 @@
+namespaces:
+  ovs-1:
+    ns_id: 0
+    target_cpu: 4.0
+    interface: veth-ovs1-phy
+    ip_range: 192.168.1.0/24
+  
+  ovs-2:
+    ns_id: 1
+    target_cpu: 4.0
+    interface: veth-ovs2-phy
+    ip_range: 192.168.2.0/24
